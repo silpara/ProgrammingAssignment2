@@ -1,5 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+##The idea is to reduce the computation effort which are really really expensive.
+##Calculating matrix inverses is one of them
+##Since it is a costly operation consuming lots of computational resources and possible warming up your computer to unpleasant temperatures. You would ideally like to compute it once and save and whenever you need just retrieve the answer calculated from previous effort
+##This is exactly what is done in makeCacheMatrix : it saves the cache and cacheSolve which retrieves the inverse from cache and if it is not there, it calculates the inverse and saves it in cache (or simply caches it)
+
 
 ## Write a short comment describing this function
 #The function makeCacheMatrix saves the inverse of a matrix
